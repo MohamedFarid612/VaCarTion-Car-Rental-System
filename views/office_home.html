@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VaCarTion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" style="margin: 10px;;">
+                <h1 class="text-center black">VaCarTion <img src="/car.png"></img></h1>
+            </div>
+            <div class="col" style="margin-top:20px; ">
+                <h2 class="text-center black display-6"><span class="office-name"></h2>
+            </div>
+            <div class="col-2" style="padding-left: 100px;">
+                <button type="button" class="col btn btn-outline-danger logout-button" style="margin:10px;">Log Out
+                </button>
+            </div>
+        </div>
+
+        <div class="row" style="padding-top:10px; margin:50px;">
+            <div class="col-12">
+                <h3 class="text-center black display-6">Your current reservations</h3>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:70px; margin:50px;">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Res NO.</th>
+                            <th scope="col">Plate ID</th>
+                            <th scope="col">Customer Name</th>
+                            <th scope="col">Res Date</th>
+                            <th scope="col">Pickup Date</th>
+                            <th scope="col">Return Date</th>
+                            <th scope="col">Total Revenue</th>
+                        </tr>
+                    </thead>
+                    <tbody class="office-reservation">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row" style="margin:50px;">
+            <div class="col-3 m-0">
+                <h3 class="text-center black display-6">Your current cars</h3>
+            </div>
+            <div class="col"></div>
+            <div class="col-1">
+                <button type="button" class="col btn btn-outline-success" id="add_car_btn">Add Car</button>
+            </div>
+        </div>
+        <div class="row" style="margin:50px;">
+            <div class="col-12">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Plate ID</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Registration Date</th>
+                            <th scope="col">Make</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">Year</th>
+                            <th scope="col">Price/Day</th>
+                        </tr>
+                    </thead>
+                    <tbody class="office-cars">
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Default theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css" />
+    <!-- Semantic UI theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+    <script src="/js/office_home.js"> </script>
+</body>
+
+</html>
